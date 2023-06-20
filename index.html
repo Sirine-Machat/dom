@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <title>cart shopping</title>
+</head>
+<body>
+    <div id="title">
+        <h1>Shopping Cart</h1>
+
+    </div>
+<section id="all">
+    <div class="items">
+        <div class="card">
+            <div class="pc">
+                <p class="name">PC </p>
+                <img src="https://www.tunisianet.com.tn/307207-home/pc-portable-lenovo-ideapad-3-15ada05-amd-dual-core-8-go-noir.jpg" alt="pc">
+                
+                
+            </div>
+            <div class="pc3">
+                <p>Price:<span class="prix">1900</span>TND</p> 
+                
+                    <input class="nu" type="number" name="quantity" value="1" min="1">
+                    <button class="but" onclick="removeitem (event)" >REMOVE</button>
+                    <i class="fa-duotone fa-heart" onclick="changeColor()"></i>
+                 
+                           
+            </div>
+
+            
+        </div>
+
+        <div class="card">
+            <div class="pc">
+                <p class="name">mouse</p>
+                <img src="https://www.tunisianet.com.tn/267224-home/souris-optique-jertech-m300-noir.jpg" alt="pc">
+                
+                
+            </div>
+            <div class="pc3">
+                <p>Price:<span class="prix">200</span>TND</p> 
+               
+                
+                    <input class="nu" type="number" name="quantity" value="1" min="1">
+                    <button class="but" onclick="removeitem (event)" >REMOVE</button>
+                    <i class="fa-duotone fa-heart" onclick="changeColor()"></i>
+                  
+                        
+            </div>
+        </div>
+
+       
+    </div>
+    <div id="cou">
+    
+    <p>Total: <span class="totals">20100</span>TND</p>
+    <button class="btnp" onclick="additem(event)">PURCHASE</button>
+
+    </div>
+</section>
+<script src="jas.js"></script>
+</body>
+</html>
